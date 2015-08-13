@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <aggregateTypes>Maximum</aggregateTypes>
+        <aggregateTypes>Minimum</aggregateTypes>
+        <field>Financial_Account__c.Current_Value__c</field>
+    </columns>
+    <columns>
+        <field>Financial_Account__c.Financial_Account_Number__c</field>
+    </columns>
+    <columns>
+        <field>Financial_Account__c.Ownership__c</field>
+    </columns>
+    <columns>
+        <field>Financial_Account__c.Beneficiary__c</field>
+    </columns>
+    <columns>
+        <field>Financial_Account__c.Margin__c</field>
+    </columns>
+    <columns>
+        <field>Financial_Account__c.Tax_Status__c</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <description>Financial Accounts by Client grouped by Account Type</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Financial_Account__c.Account_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Financial Accounts by Current Value</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Financial_Account__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Financial_Account__c.Account_Opening__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2001-01-01</startDate>
+    </timeFrameFilter>
+</Report>

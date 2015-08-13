@@ -1,0 +1,150 @@
+<apex:page standardStylesheets="false" showHeader="true" sidebar="false" standardController="Account" tabStyle="Account">    
+    
+    <apex:stylesheet value="{!$Resource.canvas}"/>
+    <apex:stylesheet value="{!$Resource.bootstrap}"/>
+    <apex:stylesheet value="{!$Resource.bootstrapmin}"/>
+    <apex:stylesheet value="{!$Resource.bootstrapresponsive}"/>
+    <apex:stylesheet value="{!$Resource.bootstrapresponsivemin}"/>
+    <apex:includeScript value="{!$Resource.bootstrapjs}"/>
+    <apex:includeScript value="{!$Resource.bootstrapminjs}"/>
+    <apex:includeScript value="{!$Resource.canvasjs}"/> 
+    <apex:includeScript value="{!$Resource.jquerymin}"/> 
+
+    
+  <body>
+    <div class="container">
+      <h1>Business Model Canvas <font size="5"></font></h1>
+      <!-- Canvas -->
+      <table id="bizcanvas" border="1">
+        <tr>
+          <td colspan="2" rowspan="2">
+            <h4>Parceiros Chave <apex:stylesheet value="{!$Resource.imagem1}"/></h4>
+              <ul>
+                  <!-- apex:repeat value="{!account}" var="conta" -->
+                  <li>
+                  <p><a class="" 
+              data-original-title=""
+              data-content="" 
+              data-placement="bottom"
+              rel="popover" href="#"></a><apex:outputtext value="{!account.Name}"/></p></li>
+                  <!--/apex:repeat -->
+              </ul>                      
+          </td>
+          <td colspan="2">
+            <h4>Atividades Chave</h4>
+                <ul>
+                     <!-- apex:repeat value="{!account}" var="conta" -->
+                  <li>
+                  <p><a class="" 
+              data-original-title=""
+              data-content="" 
+              data-placement="bottom"
+              rel="popover" href="#"></a><apex:outputtext value="{!account.Description}"/></p></li>
+                  <!--/apex:repeat -->
+              </ul>     
+          </td>
+          <td colspan="2" rowspan="2">
+            <h4>Proposta de Valor</h4>
+            <ul>
+                 <!-- apex:repeat value="{!account}" var="conta" -->
+                  <li>
+                  <p><a class="" 
+              data-original-title=""
+              data-content="" 
+              data-placement="bottom"
+              rel="popover" href="#"></a><apex:outputtext value="{!account.Phone}"/></p></li>
+                  <!--/apex:repeat -->
+              </ul>     
+          </td>
+          <td colspan="2">
+            <h4>Relações com Cliente</h4>
+            <ul>
+               <!-- apex:repeat value="{!account}" var="conta" -->
+                  <li>
+                  <p><a class="" 
+              data-original-title=""
+              data-content="" 
+              data-placement="bottom"
+              rel="popover" href="#"></a><apex:outputtext value="{!account.Name}"/></p></li>
+                  <!--/apex:repeat -->
+
+              </ul>     
+          </td>
+          <td colspan="2" rowspan="2">
+            <h4>Segmentos de Mercado</h4>
+            <ul>
+                 <!-- apex:repeat value="{!account}" var="conta" -->
+                  <li>
+                  <p><a class="" 
+              data-original-title=""
+              data-content="" 
+              data-placement="bottom"
+              rel="popover" href="#"></a><apex:outputtext value="{!account.Name}"/></p></li>
+                  <!--/apex:repeat -->
+                  </ul>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <h4>Recursos Chave</h4>
+            <ul>
+              <!-- apex:repeat value="{!account}" var="conta" -->
+                  <li>
+                  <p><a class="" 
+              data-original-title=""
+              data-content="" 
+              data-placement="bottom"
+              rel="popover" href="#"></a><apex:outputtext value="{!account.Fax}"/></p></li>
+                  <!--/apex:repeat -->
+              </ul>     
+          </td>
+          <td colspan="2">
+            <h4>Canais</h4>
+            <ul>
+                <!-- apex:repeat value="{!account}" var="conta" -->
+                  <li>
+                  <p><a class="" 
+              data-original-title=""
+              data-content="" 
+              data-placement="bottom"
+              rel="popover" href="#"></a><apex:outputtext value="{!account.Website}"/></p></li>
+                  <!--/apex:repeat -->
+            </ul>     
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5">
+            <h4>Estruturas de Custos</h4>
+            <ul>
+                 <!-- apex:repeat value="{!account}" var="conta" -->
+                  <li>
+                  <p><a class="" 
+              data-original-title=""
+              data-content="" 
+              data-placement="bottom"
+              rel="popover" href="#"></a><apex:outputtext value="{!account.Name}"/></p></li>
+                  <!--/apex:repeat -->
+            </ul>     
+          </td>
+          <td colspan="5">
+            <h4>Fontes de Renda</h4>
+            <ul>
+               <!-- apex:repeat value="{!account}" var="conta" -->
+                  <li>
+                  <p><a class="" 
+              data-original-title=""
+              data-content="" 
+              data-placement="bottom"
+              rel="popover" href="#"></a><apex:outputtext value="{!account.Name}"/></p></li>
+                  <!--/apex:repeat -->
+            </ul>     
+          </td>
+        </tr>
+      </table>
+      <!-- /Canvas -->
+    </div>
+  </body>
+
+
+
+</apex:page>

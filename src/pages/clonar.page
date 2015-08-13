@@ -1,0 +1,16 @@
+<apex:page standardController="Opportunity">
+   <apex:detail />
+   <apex:form >
+        <apex:sectionHeader title="Edição de Oportunidade" subtitle="{!Opportunity.id}"/>
+        <apex:pageBlock title="Editar Itens do Plano" mode="edit">
+            <apex:pageBlockButtons >
+
+
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Informações" columns="1">
+               
+                    
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoices</value>
+    </caseValues>
+    <fields>
+        <label><!-- Descricao --></label>
+        <name>Descricao__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roll-Up Summary --></label>
+        <name>Roll_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Aberto</masterLabel>
+            <translation><!-- Aberto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Em negociação</masterLabel>
+            <translation><!-- Em negociação --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fechado</masterLabel>
+            <translation><!-- Fechado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pendente</masterLabel>
+            <translation><!-- Pendente --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- formula_list --></label>
+        <name>formula_list__c</name>
+    </fields>
+    <fields>
+        <label><!-- lista multipla --></label>
+        <name>lista_multipla__c</name>
+        <picklistValues>
+            <masterLabel>a</masterLabel>
+            <translation><!-- a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>b</masterLabel>
+            <translation><!-- b --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>c</masterLabel>
+            <translation><!-- c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>d</masterLabel>
+            <translation><!-- d --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e</masterLabel>
+            <translation><!-- e --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>f</masterLabel>
+            <translation><!-- f --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>g</masterLabel>
+            <translation><!-- g --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>h</masterLabel>
+            <translation><!-- h --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Layout de Invoice</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Renumerar_Itens_de_Linha --></label>
+        <name>Renumerar_Itens_de_Linha</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Item do Plano</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Itens do Plano</value>
+    </caseValues>
+    <fields>
+        <label><!-- Ação --></label>
+        <name>Acao__c</name>
+        <relationshipLabel><!-- Itens do Plano --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plano de Ação --></label>
+        <name>Plano_de_acao__c</name>
+        <relationshipLabel><!-- Itens do Plano --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Atrasado</masterLabel>
+            <translation><!-- Atrasado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Execução</masterLabel>
+            <translation><!-- Execução --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finalizado</masterLabel>
+            <translation><!-- Finalizado --></translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+</CustomObjectTranslation>

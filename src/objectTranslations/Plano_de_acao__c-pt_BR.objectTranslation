@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plano de Ação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Planos de Ação</value>
+    </caseValues>
+    <fields>
+        <label><!-- Ações Atrasadas --></label>
+        <name>Acoes_Atrasadas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ações Em Execução --></label>
+        <name>Acoes_em_execucao__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ações Finalizadas --></label>
+        <name>Acoes_finalizadas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projeto Renovação --></label>
+        <name>Projeto_Renovacao__c</name>
+        <relationshipLabel><!-- Planos de Ação --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status do Plano de Ação --></label>
+        <name>Status_do_Plano_de_Acao__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total de Ações --></label>
+        <name>Total_de_Acoes__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Layout de Plano de Ação</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- relatorio --></label>
+            <section>relatorio</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Novo_Item_do_Plano --></label>
+        <name>Novo_Item_do_Plano</name>
+    </webLinks>
+</CustomObjectTranslation>

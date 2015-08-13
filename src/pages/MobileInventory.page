@@ -1,0 +1,155 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false" standardController="Merchandise__c" extensions="MobileInventoryExtension" recordSetVar="products">
+  <!-- stylesheets and scripts, from CDN (use local files in production) -->
+  <apex:stylesheet value="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+  <apex:includeScript value="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"/>
+  <apex:includeScript value="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.0/jquery.mobile-1.1.0.min.js"/>
+     <head>
+   <title>Mobile Inventory</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+   <script>
+      var j$ = jQuery.noConflict();
+      var dataChanged = false;
+      
+      j$(document).ready(function() {
+         j$(".updateButton").click(function() {
+            var id = j$(this).attr('data-id');
+            var inventory = parseInt(j$("#quantity"+id).val());
+            j$.mobile.showPageLoadingMsg();
+            MobileInventoryExtension.updateMerchandiseItem(id,inventory,handleUpdate);
+      });
+});
+      function handleUpdate(result,event) {
+         alert(result);
+         if(result == 'Item Updated') { dataChanged = true; }
+         j$.mobile.hidePageLoadingMsg();
+      }
+   </script>
+   <script>
+      var j$ = jQuery.noConflict();
+      var dataChanged = false;
+      
+      j$(document).ready(function() {
+         j$(".removeButton").click(function() {
+            var id = j$(this).attr('data-id');
+            j$.mobile.showPageLoadingMsg();
+            MobileInventoryExtension.removeMerchandiseItem(id,handleRemove);
+      });
+});
+      function handleRemove(result,event) {
+         alert(result);
+         if(result == 'Item Deleted') { dataChanged = true; }
+         j$.mobile.hidePageLoadingMsg();
+      }
+   </script>
+   <script>
+      var j$ = jQuery.noConflict();
+      var dataChanged = false;
+      
+      j$(document).ready(function() {
+         j$(".createButton").click(function() {
+            var name = j$("#name");
+            var price = parseInt(j$("#price").val())
+            var quantity = j$(this).find("#quantity").val();
+            alert(quantity);
+            j$.mobile.showPageLoadingMsg();
+            MobileInventoryExtension.createMerchandise(name, price, quantity, handleCreate);
+      });
+});
+      function handleCreate(result,event) {
+         alert(result);
+         if(result == 'Item Created') { dataChanged = true; }
+         j$.mobile.hidePageLoadingMsg();
+      }
+   </script>
+</head>
+  <body>
+      
+      <!-- Main page, to display list of Merchandise once app starts -->
+      <div data-role="page" data-theme="b" id="mainpage"> 
+          <!-- page header -->
+          <div  data-role="header">
+              <!-- button for logging out -->
+              <a href='https://na17.salesforce.com/secur/logout.jsp ' id="link_logout" data-role="button" data-icon='delete'>
+                  Sair
+              </a>
+              <!-- page title -->
+              <h2>Listar</h2>
+          </div> 
+          <!-- page content -->
+          <div id="#content" data-role="content">
+              <!-- page title -->
+              <h2>Mobile Inventory</h2> 
+              <!-- list of merchandise, links to detail pages -->
+              <div id="div_merchandise_list">
+                <ul data-inset="true" data-role="listview" data-theme="a" data-dividertheme="a"> 
+                   <apex:repeat value="{!products}" var="product">
+                      <li>
+                         <a href="#detailpage{!product.Id}">
+                            <apex:outputField value="{!product.Name}"/>
+                         </a>
+                      </li>
+                   </apex:repeat>
+                </ul>
+                  <a href="#createMerchandise" data-role="button" class="createMerchandise" data-theme="b">Nova Mercadoria</a>
+              </div>
+              
+          </div>
+      </div> 
+ 
+      <!-- Detail page, to display details when user clicks specific Merchandise record -->
+      <!-- set up local variable -->
+      <apex:repeat value="{!products}" var="product">
+        <div data-role="page" data-theme="b" id="detailpage{!product.Id}"> 
+            <!-- page header -->
+            <div  data-role="header"> 
+                <!-- button for going back to mainpage -->
+                <a href='#mainpage' id="backInventory" class='ui-btn-left' data-icon='home'>
+                    Home
+                </a>
+                <!-- page title -->
+                <h1>Editar</h1>
+            </div>
+            <!-- page content -->
+            <div id="#content" data-role="content">
+                <h2 id="name">
+                  <apex:outputField value="{!product.Name}"/>
+                </h2> 
+                <h3>Preço: </h3>
+                <label for="price" class="ui-hidden-accessible">Price ($):</label>
+                <apex:outputField value="{!product.Price__c}"/>
+                <h3>Quantidade: </h3>
+                <label for="quantity" class="ui-hidden-accessible">Quantity:</label>
+                <input type="text" id="quantity{!product.Id}" value="{!ROUND(product.Quantity__c, 0)}"></input>
+                <a href="#" data-role="button" data-id="{!product.Id}" class="updateButton" data-theme="b">Update</a>
+                <a href="#" data-role="button" data-id="{!product.Id}" class="removeButton" data-theme="b">Delete</a>
+            </div>
+        </div>
+      </apex:repeat>
+      <apex:repeat value="{!products}" var="product">
+        <div data-role="page" data-theme="b" id="createMerchandise"> 
+            <!-- page header -->
+            <div  data-role="header"> 
+                <!-- button for going back to mainpage -->
+                <a href='#mainpage' id="backInventory" class='ui-btn-left' data-icon='home'>
+                    Home
+                </a>
+                <!-- page title -->
+                <h1>Criar</h1>
+            </div>
+            <!-- page content -->
+            <div id="#content" data-role="content">
+                <h3>Nome: </h3>
+                <label for="name" class="ui-hidden-accessible">Name:</label>
+                <input type="text" name="name"></input>
+                <h3>Preço: </h3>
+                <label for="price" class="ui-hidden-accessible">Price:</label>
+                <input type="text" id="price" name="price"></input>
+                <h3>Quantidade: </h3>
+                <label for="quantity" class="ui-hidden-accessible">Quantity:</label>
+                <input type="text" id="quantity" name="quantity"></input>
+                <a href="#" data-role="button" class="createButton" data-theme="b">Criar Mercadoria</a>
+            </div>
+        </div>
+        </apex:repeat>      
+  </body>
+</apex:page>

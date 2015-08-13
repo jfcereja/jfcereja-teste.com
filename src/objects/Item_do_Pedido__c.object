@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Embalagem__c</fullName>
+        <externalId>false</externalId>
+        <label>Embalagem</label>
+        <referenceTo>Embalagem__c</referenceTo>
+        <relationshipLabel>Itens do Pedido</relationshipLabel>
+        <relationshipName>Itens_do_Pedido</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Ovo__c</fullName>
+        <externalId>false</externalId>
+        <label>Ovo</label>
+        <referenceTo>Ovo__c</referenceTo>
+        <relationshipLabel>Itens do Pedido</relationshipLabel>
+        <relationshipName>Itens_do_Pedido</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Pre_o_Total_do_Item__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Embalagem__r.Tipo_Qntde__c,
+&quot;6&quot;,(Ovo__r.Pre_o_Un__c * 6 * Qtd_de_Caixas__c ),
+&quot;10&quot;,(Ovo__r.Pre_o_Un__c * 10 * Qtd_de_Caixas__c),
+&quot;12&quot;,(Ovo__r.Pre_o_Un__c * 12 * Qtd_de_Caixas__c),
+&quot;15&quot;,(Ovo__r.Pre_o_Un__c * 15 * Qtd_de_Caixas__c),
+&quot;18&quot;,(Ovo__r.Pre_o_Un__c * 18 * Qtd_de_Caixas__c),
+&quot;30&quot;,(Ovo__r.Pre_o_Un__c * 30 * Qtd_de_Caixas__c),
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Preço Total do Item</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Qtd_de_Caixas__c</fullName>
+        <externalId>false</externalId>
+        <label>Qtd de Caixas</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Item do Pedido</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Tudo</label>
+    </listViews>
+    <nameField>
+        <label>Nome de Item do Pedido</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Itens do Pedido</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

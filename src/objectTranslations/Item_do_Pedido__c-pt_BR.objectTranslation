@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Item do Pedido</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Itens do Pedido</value>
+    </caseValues>
+    <fields>
+        <label><!-- Embalagem --></label>
+        <name>Embalagem__c</name>
+        <relationshipLabel><!-- Itens do Pedido --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ovo --></label>
+        <name>Ovo__c</name>
+        <relationshipLabel><!-- Itens do Pedido --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Preço Total do Item --></label>
+        <name>Pre_o_Total_do_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qtd de Caixas --></label>
+        <name>Qtd_de_Caixas__c</name>
+    </fields>
+    <gender>Masculine</gender>
+</CustomObjectTranslation>

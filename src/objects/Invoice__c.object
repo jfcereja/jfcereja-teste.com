@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Descricao__c</fullName>
+        <externalId>false</externalId>
+        <label>Descricao</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Roll_Up__c</fullName>
+        <externalId>false</externalId>
+        <label>Roll-Up Summary</label>
+        <summarizedField>Line_Itm__c.Line_Item_Total__c</summarizedField>
+        <summaryForeignKey>Line_Itm__c.Invoice__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Aberto</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fechado</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Em negociação</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pendente</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>formula_list__c</fullName>
+        <externalId>false</externalId>
+        <formula>Roll_Up__c / (IF(INCLUDES(lista_multipla__c, &apos;a&apos;), 1, 0) 
++ IF(INCLUDES(lista_multipla__c, &apos;b&apos;), 1, 0) 
++ IF(INCLUDES(lista_multipla__c, &apos;c&apos;), 1, 0)
++ IF(INCLUDES(lista_multipla__c, &apos;d&apos;), 1, 0)
++ IF(INCLUDES(lista_multipla__c, &apos;e&apos;), 1, 0)
++ IF(INCLUDES(lista_multipla__c, &apos;f&apos;), 1, 0)
++ IF(INCLUDES(lista_multipla__c, &apos;g&apos;), 1, 0)
++ IF(INCLUDES(lista_multipla__c, &apos;h&apos;), 1, 0)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>formula_list</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>lista_multipla__c</fullName>
+        <externalId>false</externalId>
+        <label>lista multipla</label>
+        <picklist>
+            <picklistValues>
+                <fullName>a</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>b</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>c</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>d</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>e</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>f</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>g</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>h</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <gender>Feminine</gender>
+    <label>Invoice</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Tudo</label>
+    </listViews>
+    <nameField>
+        <displayFormat>INV-{0000}</displayFormat>
+        <label>Invoice Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Invoices</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Renumerar_Itens_de_Linha</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Renumerar Itens de Linha</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/apex.js&quot;)}
+var result = sforce.apex.execute(&quot;InvoiceUtilities&quot;,&quot;renumberLineItems&quot;,{invoiceName:&quot;{!
+Invoice__c.Name}&quot;});
+alert(result);
+window.location.reload();</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is a mail merge template to be used with Know Your Client.  
+You need to  upload this as an mail merge template.
+
+Send this form to the Client to get approval of the Know Your Client information that has been collected.</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>KYC Merge Form.doc</name>
+    <public>false</public>
+</Document>

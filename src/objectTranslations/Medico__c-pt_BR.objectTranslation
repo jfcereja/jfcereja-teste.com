@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Medico</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Medicos</value>
+    </caseValues>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telefone Celular --></label>
+        <name>Telefone_Celular__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Layout de Medico</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

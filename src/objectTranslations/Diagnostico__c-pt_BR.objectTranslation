@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Diagnostico</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Diagnosticos</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comercial --></label>
+        <name>Comercial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data --></label>
+        <name>Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projeto Renovação --></label>
+        <name>Diagnostico__c</name>
+        <relationshipLabel><!-- Diagnosticos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gestão --></label>
+        <name>Gestao__c</name>
+    </fields>
+    <fields>
+        <label><!-- Número --></label>
+        <name>Numero__c</name>
+    </fields>
+    <fields>
+        <label><!-- Representante Vipal --></label>
+        <name>Representante_Vipal__c</name>
+        <relationshipLabel><!-- Diagnosticos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Representante Reformador --></label>
+        <name>Representante__c</name>
+    </fields>
+    <fields>
+        <label><!-- Técnico --></label>
+        <name>Tecnico__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Layout de Diagnostico</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Texto --></label>
+            <section>Texto</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Criar_Pdf --></label>
+        <name>Criar_Pdf</name>
+    </webLinks>
+</CustomObjectTranslation>

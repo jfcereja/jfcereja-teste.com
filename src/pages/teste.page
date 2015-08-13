@@ -1,0 +1,9 @@
+<apex:page showHeader="false" standardStylesheets="false">
+    <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <apex:stylesheet value="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    
+    <a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input"></input>
+    <input class="btn btn-default" type="submit" value="Submit"></input>
+</apex:page>

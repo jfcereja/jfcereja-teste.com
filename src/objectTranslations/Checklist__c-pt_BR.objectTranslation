@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Checklist</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Checklists</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agro/OTR a quente --></label>
+        <name>Agro__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assistente de Frota(AF). Qtde de Pessoas --></label>
+        <name>Assistente_de_Frota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capacidade Produtiva Total Carga a Frio --></label>
+        <name>Capacidade_Produtiva_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Carga a Frio --></label>
+        <name>Carga_a_Frio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Carga a quente --></label>
+        <name>Carga_a_quente__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coletador/Vendedor. Qtde de Pessoas: --></label>
+        <name>Coletador_Vendedor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coletador. Qtde de Pessoas: --></label>
+        <name>Coletador__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controla inadimplência? --></label>
+        <name>Controla_inadimplencia__c</name>
+        <picklistValues>
+            <masterLabel>NAO</masterLabel>
+            <translation><!-- NAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIM</masterLabel>
+            <translation><!-- SIM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dias Trabalhados por Mês --></label>
+        <name>Dias_Trabalhados_por_Mes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipe de Vendas --></label>
+        <name>Equipe_de_Vendas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Faz controle de fluxo de caixa? --></label>
+        <name>Faz_controle_de_fluxo_de_caixa__c</name>
+        <picklistValues>
+            <masterLabel>NAO</masterLabel>
+            <translation><!-- NAO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SIM</masterLabel>
+            <translation><!-- SIM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gerência --></label>
+        <name>Gerencia__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meia-carga a frio --></label>
+        <name>Meia_carga_a_frio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meia-carga a quente --></label>
+        <name>Meia_carga_a_quente__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nº de ciclos/ turno --></label>
+        <name>N_de_ciclos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outros --></label>
+        <name>Outros__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passeio a frio --></label>
+        <name>Passeio_a_frio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passeio remolde --></label>
+        <name>Passeio_remolde__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passeio a quente --></label>
+        <name>Passerio_a_quente__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pontos de Apoio(Parceiros/Terceiros) --></label>
+        <name>Pontos_de_Apoio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Porta/Pátio --></label>
+        <name>Porta_Patio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Posicoes de Autoclave --></label>
+        <name>Posicoes_de_Enclave__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projeto Renovação --></label>
+        <name>Projeto_Renova_o__c</name>
+        <relationshipLabel><!-- Checklists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Qual o preço médio praticado? --></label>
+        <name>Qual_o_preco_medio__c</name>
+    </fields>
+    <fields>
+        <help><!-- Referente ao ultimo mês(Vencidos a mais de 30 dias) --></help>
+        <label><!-- Qual percentual de inadimplência? --></label>
+        <name>Qual_percentual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Se houver outros quais são? --></label>
+        <name>Se_houver_outros__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Equipe de Vendas --></label>
+        <name>Total_equipe_de_vendas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total pneus Produzidos --></label>
+        <name>Total_pneus_Produzidos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total porcentagem pneus coletados --></label>
+        <name>Total_porcentagem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Turnos Trabalhados --></label>
+        <name>Turnos_Trabalhados__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendedor externo. Qtde de Pessoas: --></label>
+        <name>Vendedor_externo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendedor interno. Qtde de Pessoas: --></label>
+        <name>Vendedor_interno__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Layout de Checklist</layout>
+        <sections>
+            <label><!-- Aspectos Comerciais - Origem dos Pneus Coletados --></label>
+            <section>Aspectos Comerciais - Origem dos Pneus Coletados</section>
+        </sections>
+        <sections>
+            <label><!-- Aspectos Comerciais - Perfil da Equipe de Vendas --></label>
+            <section>Aspectos Comerciais - Perfil da Equipe de Vendas</section>
+        </sections>
+        <sections>
+            <label><!-- Aspectos Gerenciais --></label>
+            <section>Aspectos Gerenciais</section>
+        </sections>
+        <sections>
+            <label><!-- Aspectos Tecnicos - Capacidade Produtiva --></label>
+            <section>Aspectos Tecnicos - Capacidade Produtiva</section>
+        </sections>
+        <sections>
+            <label><!-- Aspectos Tecnicos - Produção Média --></label>
+            <section>Aspectos Tecnicos - Produção Média</section>
+        </sections>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

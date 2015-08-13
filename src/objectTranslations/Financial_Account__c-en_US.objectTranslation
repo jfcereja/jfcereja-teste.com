@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Financial Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Financial Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Close --></label>
+        <name>Account_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Description --></label>
+        <name>Account_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Opening --></label>
+        <name>Account_Opening__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>401(k)</masterLabel>
+            <translation><!-- 401(k) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>403(b)</masterLabel>
+            <translation><!-- 403(b) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>529 Plan</masterLabel>
+            <translation><!-- 529 Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brokerage</masterLabel>
+            <translation><!-- Brokerage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CD</masterLabel>
+            <translation><!-- CD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMA</masterLabel>
+            <translation><!-- CMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Checking</masterLabel>
+            <translation><!-- Checking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount Brokerage</masterLabel>
+            <translation><!-- Discount Brokerage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutual Fund</masterLabel>
+            <translation><!-- Mutual Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Beneficiary --></label>
+        <name>Beneficiary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client --></label>
+        <name>Client__c</name>
+        <relationshipLabel><!-- Financial Accounts (Client) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Value --></label>
+        <name>Current_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Account Number --></label>
+        <name>Financial_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Joint Party --></label>
+        <name>Joint_Party__c</name>
+        <relationshipLabel><!-- Financial Accounts (Joint Party) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Margin --></label>
+        <name>Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership --></label>
+        <name>Ownership__c</name>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint</masterLabel>
+            <translation><!-- Joint --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Statement Address 1 --></label>
+        <name>Statement_Address1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement Address 2 --></label>
+        <name>Statement_Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement City --></label>
+        <name>Statement_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement Country --></label>
+        <name>Statement_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement State --></label>
+        <name>Statement_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Statement Zip/Postal Code --></label>
+        <name>Statement_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax ID --></label>
+        <name>Tax_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Status --></label>
+        <name>Tax_Status__c</name>
+        <picklistValues>
+            <masterLabel>Exempt</masterLabel>
+            <translation><!-- Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Exempt</masterLabel>
+            <translation><!-- Not Exempt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Trustee --></label>
+        <name>Trustee__c</name>
+    </fields>
+    <layouts>
+        <layout>Financial Account Layout</layout>
+        <sections>
+            <label><!-- Financial Account Information --></label>
+            <section>Financial Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Statement Address Information --></label>
+            <section>Statement Address Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Banking --></label>
+        <name>Banking</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Brokerage --></label>
+        <name>Brokerage</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Credit Card --></label>
+        <name>CreditCard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Financial Accounts --></label>
+        <name>FinancialAccounts</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

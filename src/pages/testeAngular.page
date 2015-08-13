@@ -1,0 +1,28 @@
+<apex:page showHeader="false" showChat="false">
+    
+    <apex:stylesheet value="{!URLFOR($Resource.angularUI, 'zipdosalesforce/demo.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.angularUI, 'zipdosalesforce/mobile-angular-ui-base.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.angularUI, 'zipdosalesforce/mobile-angular-ui-desktop.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.angularUI, 'zipdosalesforce/mobile-angular-ui-hover.min.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.angularUI, 'zipdosalesforce/angular.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.angularUI, 'zipdosalesforce/angular-route.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.angularUI, 'zipdosalesforce/angular-touch.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.angularUI, 'zipdosalesforce/demo.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.angularUI, 'zipdosalesforce/mobile-angular-ui.min.js')}"/>
+    
+    <div ng-app='MobileAngularUiExamples' id="carousel-example" class="carousel">
+      <div class="carousel-inner" ng-swipe-left="carouselPrev('carousel-example')"
+                                  ng-swipe-right="carouselNext('carousel-example')">
+        <div href="" class="item active">
+          <div class="carousel-example-content">1</div>
+        </div>
+        <div href="" class="item">
+          <div class="carousel-example-content">2</div>
+        </div>
+        <div href="" class="item">
+          <div class="carousel-example-content">3</div>
+        </div>
+      </div>
+    </div>
+        
+</apex:page>

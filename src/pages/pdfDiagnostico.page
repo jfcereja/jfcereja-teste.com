@@ -1,0 +1,52 @@
+<apex:page renderAs="pdf" standardController="Diagnostico__c">
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<table width="670" border="1">
+  <tr>
+    <td width="294" rowspan="2"><apex:image value="{!$Resource.logovipal}"/></td>
+    <td width="175" rowspan="2" align="center">Análise Do Cliente</td>
+    <td width="179">Revisão: {!Diagnostico__c.Numero__c}</td>
+  </tr>
+  <tr>
+    <td>Data de Hoje: {!Day(TODAY())}/{!MONTH(TODAY())}/{!YEAR(TODAY())} </td>
+  </tr>
+</table>  
+    <br></br>
+<table width="670" border="1">
+  <tr>
+    <td width="475">Cliente: {!Diagnostico__c.Diagnostico__r.Conta__r.Name}</td>
+    <td width="179">Data: {!day(Diagnostico__c.Data__c)}/{!Month(Diagnostico__c.Data__c)}/{!year(Diagnostico__c.Data__c)}</td>
+  </tr>
+  <tr>
+    <td colspan="2">Representante Vipal: {!Diagnostico__c.Representante_Vipal__r.Name}</td>
+  </tr>
+      <td colspan="2">Representante Reformador: {!Diagnostico__c.Representante__c}</td>
+</table>
+<h3>Técnico</h3>
+<p>{!Diagnostico__c.Tecnico__c}</p>
+<h3>Comercial</h3>
+<p>{!Diagnostico__c.Comercial__c}</p>
+<h3>Gestão</h3>
+<p>{!Diagnostico__c.Gestao__c}</p>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<table width="670" border="0">
+  <tr>
+      <td>________________________</td>
+      <td>________________________</td>
+  </tr>
+  <tr>
+    <td>Representante Vipal</td>
+    <td>Representante Reformador</td>
+  </tr>
+</table>
+</body>
+</html>
+
+</apex:page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ações</value>
+    </caseValues>
+    <fields>
+        <label><!-- Área --></label>
+        <name>Area__c</name>
+        <picklistValues>
+            <masterLabel>Com</masterLabel>
+            <translation><!-- Com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ges</masterLabel>
+            <translation><!-- Ges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tec</masterLabel>
+            <translation><!-- Tec --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Descrição --></label>
+        <name>Descricao__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Layout de Ação</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>
